@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "buddydog",
+  "version": "${version}",
+  "name": "Buddy Dog",
+  "description": "Ein kleiner Hund, der dir folgt, sich vor Monstern hinter dir versteckt, bellt wenn du im Voicechat sprichst und auf \"Sitz\" und \"Platz\" hoert.",
+  "authors": ["du"],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["de.buddydog.BuddyDogMod"],
+    "client": ["de.buddydog.client.BuddyDogClient"],
+    "voicechat": ["de.buddydog.voice.PuppyVoicePlugin"]
+  },
+  "depends": {
+    "fabricloader": ">=0.20.1",
+    "minecraft": "~26.3",
+    "java": ">=25",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "voicechat": "*"
+  }
+}
